@@ -9,6 +9,7 @@ const postCollection = async (params, req) => {
         
         const data = await col.insertOne({
             img: req.file.filename,
+            path: req.file.path,
             category: req.body.category,
             price: req.body.price,
             title: req.body.title,
