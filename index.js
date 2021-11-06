@@ -13,10 +13,10 @@ app.use(cors())
 const product = require('./routes/api/product')
 app.use('/api', product)
 
-app.use('/', (req, res) => {
-    res.status(200)
-    res.send('Hi, This is still working')
-})
+// app.use('/', (req, res) => {
+//     res.status(200)
+//     res.send('Hi, This is still working')
+// })
 
 //=======........========//
 
