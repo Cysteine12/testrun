@@ -56,8 +56,6 @@ router.get('/:product/:id', async (req, res) => {
 })
 
 router.post('/:product', upload.single('file'), async (req, res) => {
-    console.log(req.body);
-    console.log(req.file);
     const params = {
         dbName: 'HONEYSPLACEDB', collectionName: req.params.product
     }
